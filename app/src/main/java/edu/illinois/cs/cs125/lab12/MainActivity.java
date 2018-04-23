@@ -1,8 +1,12 @@
 package edu.illinois.cs.cs125.lab12;
 
+import android.content.Context;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.View;
+import android.widget.Button;
+import android.widget.Toast;
 
 import com.android.volley.Request;
 import com.android.volley.RequestQueue;
@@ -39,6 +43,135 @@ public final class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         startAPICall();
+
+        final Button sinx = findViewById((R.id.sinx));
+        sinx.setOnClickListener(new View.OnClickListener() {
+            public void onClick(final View v) {
+                Context context = getApplicationContext();
+                Toast toast = Toast.makeText(context, "sinx", Toast.LENGTH_SHORT);
+                toast.show();
+            }
+        });
+        final Button cosx = findViewById((R.id.cosx));
+        cosx.setOnClickListener(new View.OnClickListener() {
+            public void onClick(final View v) {
+                Context context = getApplicationContext();
+                Toast toast = Toast.makeText(context, "cosx", Toast.LENGTH_SHORT);
+                toast.show();
+            }
+        });
+        final Button tanx = findViewById((R.id.tanx));
+        tanx.setOnClickListener(new View.OnClickListener() {
+            public void onClick(final View v) {
+                Context context = getApplicationContext();
+                Toast toast = Toast.makeText(context, "tanx", Toast.LENGTH_SHORT);
+                toast.show();
+            }
+        });
+        final Button one = findViewById((R.id.one));
+        one.setOnClickListener(new View.OnClickListener() {
+            public void onClick(final View v) {
+                Context context = getApplicationContext();
+                Toast toast = Toast.makeText(context, "one", Toast.LENGTH_SHORT);
+                toast.show();
+            }
+        });
+        final Button two = findViewById((R.id.two));
+        two.setOnClickListener(new View.OnClickListener() {
+            public void onClick(final View v) {
+                Context context = getApplicationContext();
+                Toast toast = Toast.makeText(context, "two", Toast.LENGTH_SHORT);
+                toast.show();
+            }
+        });
+        final Button three = findViewById((R.id.three));
+        three.setOnClickListener(new View.OnClickListener() {
+            public void onClick(final View v) {
+                Context context = getApplicationContext();
+                Toast toast = Toast.makeText(context, "three", Toast.LENGTH_SHORT);
+                toast.show();
+            }
+        });
+        final Button four = findViewById((R.id.four));
+        four.setOnClickListener(new View.OnClickListener() {
+            public void onClick(final View v) {
+                Context context = getApplicationContext();
+                Toast toast = Toast.makeText(context, "four", Toast.LENGTH_SHORT);
+                toast.show();
+            }
+        });
+        final Button five = findViewById((R.id.five));
+        five.setOnClickListener(new View.OnClickListener() {
+            public void onClick(final View v) {
+                Context context = getApplicationContext();
+                Toast toast = Toast.makeText(context, "five", Toast.LENGTH_SHORT);
+                toast.show();
+            }
+        });
+        final Button six = findViewById((R.id.six));
+        six.setOnClickListener(new View.OnClickListener() {
+            public void onClick(final View v) {
+                Context context = getApplicationContext();
+                Toast toast = Toast.makeText(context, "six", Toast.LENGTH_SHORT);
+                toast.show();
+            }
+        });
+        final Button seven = findViewById((R.id.seven));
+        seven.setOnClickListener(new View.OnClickListener() {
+            public void onClick(final View v) {
+                Context context = getApplicationContext();
+                Toast toast = Toast.makeText(context, "seven", Toast.LENGTH_SHORT);
+                toast.show();
+            }
+        });
+        final Button eight = findViewById((R.id.eight));
+        eight.setOnClickListener(new View.OnClickListener() {
+            public void onClick(final View v) {
+                Context context = getApplicationContext();
+                Toast toast = Toast.makeText(context, "eight", Toast.LENGTH_SHORT);
+                toast.show();
+            }
+        });
+        final Button nine = findViewById((R.id.nine));
+        nine.setOnClickListener(new View.OnClickListener() {
+            public void onClick(final View v) {
+                Context context = getApplicationContext();
+                Toast toast = Toast.makeText(context, "nine", Toast.LENGTH_SHORT);
+                toast.show();
+            }
+        });
+        final Button zero = findViewById((R.id.zero));
+        zero.setOnClickListener(new View.OnClickListener() {
+            public void onClick(final View v) {
+                Context context = getApplicationContext();
+                Toast toast = Toast.makeText(context, "zero", Toast.LENGTH_SHORT);
+                toast.show();
+            }
+        });
+        final Button plus = findViewById((R.id.plus));
+        plus.setOnClickListener(new View.OnClickListener() {
+            public void onClick(final View v) {
+                Context context = getApplicationContext();
+                Toast toast = Toast.makeText(context, "plus", Toast.LENGTH_SHORT);
+                toast.show();
+            }
+        });
+        final Button minus = findViewById((R.id.minus));
+        minus.setOnClickListener(new View.OnClickListener() {
+            public void onClick(final View v) {
+                Context context = getApplicationContext();
+                Toast toast = Toast.makeText(context, "minus", Toast.LENGTH_SHORT);
+                toast.show();
+            }
+        });
+        final Button ac = findViewById((R.id.AC));
+        ac.setOnClickListener(new View.OnClickListener() {
+            public void onClick(final View v) {
+                Context context = getApplicationContext();
+                Toast toast = Toast.makeText(context, "AC", Toast.LENGTH_SHORT);
+                toast.show();
+            }
+        });
     }
 
     /**
