@@ -172,6 +172,22 @@ public final class MainActivity extends AppCompatActivity {
                 toast.show();
             }
         });
+        final Button equal = findViewById((R.id.equal));
+        equal.setOnClickListener(new View.OnClickListener() {
+            public void onClick(final View v) {
+                Context context = getApplicationContext();
+                Toast toast = Toast.makeText(context, "equal", Toast.LENGTH_SHORT);
+                toast.show();
+            }
+        });
+        final Button dot = findViewById((R.id.dot));
+        dot.setOnClickListener(new View.OnClickListener() {
+            public void onClick(final View v) {
+                Context context = getApplicationContext();
+                Toast toast = Toast.makeText(context, "dot", Toast.LENGTH_SHORT);
+                toast.show();
+            }
+        });
     }
 
     /**

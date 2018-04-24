@@ -153,10 +153,23 @@
                 android:gravity="center_horizontal">
 
                 <Button
+                    android:id="@+id/dot"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="." />
+
+                <Button
                     android:id="@+id/AC"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="AC" />
+
+                <Button
+                    android:id="@+id/equal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="=" />
+
             </TableRow>
 
         </TableLayout>
