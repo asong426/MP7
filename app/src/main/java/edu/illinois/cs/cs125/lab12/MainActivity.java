@@ -20,7 +20,6 @@ import org.json.JSONObject;
 
 /**
  * Main class for our UI design lab.
- * Comment.
  */
 public final class MainActivity extends AppCompatActivity {
     /** Default logging tag for messages from the main activity. */
