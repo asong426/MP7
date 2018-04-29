@@ -55,7 +55,7 @@ public final class MainActivity extends AppCompatActivity {
         sinx.setOnClickListener(new View.OnClickListener() {
             public void onClick(final View v) {
                 Calendar calendar = Calendar.getInstance();
-                String currentDate = "Today's Date " + DateFormat.getDateInstance().format(calendar.getTime());
+                String currentDate = "Today's Date: " + DateFormat.getDateInstance().format(calendar.getTime());
 
                 TextView textView = findViewById(R.id.text_view_date);
                 textView.setText(currentDate);
@@ -66,7 +66,7 @@ public final class MainActivity extends AppCompatActivity {
             public void onClick(final View v) {
                 Calendar calendar = Calendar.getInstance(TimeZone.getTimeZone("CDT"));
                 SimpleDateFormat format = new SimpleDateFormat("HH:mm:ss");
-                String currentTime = "Current Time " + format.format(calendar.getTime());
+                String currentTime = "Current Time: " + format.format(calendar.getTime());
 
                 TextView textView = findViewById(R.id.text_view_date);
                 textView.setText(currentTime);
