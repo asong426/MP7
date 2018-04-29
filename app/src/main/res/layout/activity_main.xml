@@ -8,9 +8,10 @@
     tools:context=".MainActivity">
 
     <TextView
-        android:id="@+id/textView3"
+        android:id="@+id/text_view_date"
         android:layout_width="match_parent"
-        android:layout_height="73dp" />
+        android:layout_height="73dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Headline" />
 
     <RelativeLayout
         android:layout_width="match_parent"
