@@ -8,12 +8,14 @@
     tools:context=".MainActivity">
 
     <TextView
+        android:background="@android:color/holo_blue_light"
         android:id="@+id/text_view_date"
         android:layout_width="match_parent"
         android:layout_height="73dp"
         android:textAppearance="@style/TextAppearance.AppCompat.Headline" />
 
     <RelativeLayout
+        android:background="@android:color/holo_blue_light"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
@@ -31,18 +33,21 @@
                 android:gravity="center_horizontal">
 
                 <Button
+                    android:background="@android:color/holo_blue_dark"
                     android:id="@+id/sinx"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:text="sinx" />
 
                 <Button
+                    android:background="@android:color/holo_blue_dark"
                     android:id="@+id/cosx"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:text="cosx" />
 
                 <Button
+                    android:background="@android:color/holo_blue_dark"
                     android:id="@+id/tanx"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
@@ -56,18 +61,21 @@
                 android:gravity="center_horizontal">
 
                 <Button
+                    android:background="@android:color/holo_blue_dark"
                     android:id="@+id/seven"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:text="7" />
 
                 <Button
+                    android:background="@android:color/holo_blue_dark"
                     android:id="@+id/eight"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:text="8" />
 
                 <Button
+                    android:background="@android:color/holo_blue_dark"
                     android:id="@+id/nine"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
@@ -82,18 +90,21 @@
                 android:gravity="center_horizontal">
 
                 <Button
+                    android:background="@android:color/holo_blue_dark"
                     android:id="@+id/four"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:text="4" />
 
                 <Button
+                    android:background="@android:color/holo_blue_dark"
                     android:id="@+id/five"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:text="5" />
 
                 <Button
+                    android:background="@android:color/holo_blue_dark"
                     android:id="@+id/six"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
@@ -108,18 +119,21 @@
                 android:gravity="center_horizontal">
 
                 <Button
+                    android:background="@android:color/holo_blue_dark"
                     android:id="@+id/one"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:text="1" />
 
                 <Button
+                    android:background="@android:color/holo_blue_dark"
                     android:id="@+id/two"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:text="2" />
 
                 <Button
+                    android:background="@android:color/holo_blue_dark"
                     android:id="@+id/three"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
@@ -134,18 +148,21 @@
                 android:gravity="center_horizontal">
 
                 <Button
+                    android:background="@android:color/holo_blue_dark"
                     android:id="@+id/plus"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:text="+" />
 
                 <Button
+                    android:background="@android:color/holo_blue_dark"
                     android:id="@+id/zero"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:text="0" />
 
                 <Button
+                    android:background="@android:color/holo_blue_dark"
                     android:id="@+id/minus"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
@@ -160,18 +177,21 @@
                 android:gravity="center_horizontal">
 
                 <Button
+                    android:background="@android:color/holo_blue_dark"
                     android:id="@+id/dot"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:text="." />
 
                 <Button
+                    android:background="@android:color/holo_orange_dark"
                     android:id="@+id/AC"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:text="AC" />
 
                 <Button
+                    android:background="@android:color/holo_blue_dark"
                     android:id="@+id/equal"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"

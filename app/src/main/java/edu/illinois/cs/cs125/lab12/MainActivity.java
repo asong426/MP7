@@ -1,6 +1,13 @@
 package edu.illinois.cs.cs125.lab12;
 
+import android.Manifest;
 import android.content.Context;
+import android.content.pm.PackageManager;
+import android.location.Location;
+import android.location.LocationListener;
+import android.location.LocationManager;
+import android.support.v4.app.ActivityCompat;
+import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -28,7 +35,10 @@ import java.util.TimeZone;
 /**
  * Main class for our UI design lab.
  */
-public final class MainActivity extends AppCompatActivity {
+public final class MainActivity extends AppCompatActivity implements LocationListener {
+
+
+    private LocationManager locationManager;
     /** Default logging tag for messages from the main activity. */
     private static final String TAG = "Lab12:Main";
 
@@ -64,7 +74,7 @@ public final class MainActivity extends AppCompatActivity {
         final Button cosx = findViewById((R.id.cosx));
         cosx.setOnClickListener(new View.OnClickListener() {
             public void onClick(final View v) {
-                Calendar calendar = Calendar.getInstance(TimeZone.getTimeZone("CDT"));
+                Calendar calendar = Calendar.getInstance(TimeZone.getTimeZone("America/Los_Angeles"));
                 SimpleDateFormat format = new SimpleDateFormat("HH:mm:ss");
                 String currentTime = "Current Time: " + format.format(calendar.getTime());
 
@@ -73,6 +83,26 @@ public final class MainActivity extends AppCompatActivity {
             }
         });
 
+        final Button tanx = findViewById((R.id.tanx));
+        tanx.setOnClickListener(new View.OnClickListener() {
+            public void onClick(final View v) {
+                locationManager = (LocationManager) getSystemService(Context.LOCATION_SERVICE);
+                if (ActivityCompat.checkSelfPermission(MainActivity.this, Manifest.permission.ACCESS_FINE_LOCATION)
+                        != PackageManager.PERMISSION_GRANTED ||
+                        ActivityCompat.checkSelfPermission(MainActivity.this, Manifest.permission.ACCESS_COARSE_LOCATION)
+                                != PackageManager.PERMISSION_GRANTED) {
+                    // Permission is not granted
+                    ActivityCompat.requestPermissions(MainActivity.this, new String[] {
+                                    Manifest.permission.ACCESS_FINE_LOCATION,
+                                    Manifest.permission.ACCESS_COARSE_LOCATION }, 7);
+                }
+                else {
+                    Location location = locationManager.getLastKnownLocation(LocationManager.GPS_PROVIDER);
+                    onLocationChanged(location);
+                }
+
+            }
+        });
     }
 
     /**
@@ -110,5 +140,30 @@ public final class MainActivity extends AppCompatActivity {
         } catch (Exception e) {
             e.printStackTrace();
         }
+    }
+
+    @Override
+    public void onLocationChanged(Location location) {
+        double longitude = location.getLongitude();
+        double latitude = location.getLatitude();
+
+        TextView textView = findViewById(R.id.text_view_date);
+        Log.i("MainActivity", "Longitude: " + longitude + ", Latitude: " + latitude);
+        textView.setText("Longitude" + longitude + "\n" + "Latitude:" + latitude);
+    }
+
+    @Override
+    public void onStatusChanged(String provider, int status, Bundle extras) {
+
+    }
+
+    @Override
+    public void onProviderEnabled(String provider) {
+
+    }
+
+    @Override
+    public void onProviderDisabled(String provider) {
+
     }
 }
