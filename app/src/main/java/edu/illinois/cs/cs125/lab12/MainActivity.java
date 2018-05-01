@@ -149,7 +149,7 @@ public final class MainActivity extends AppCompatActivity implements LocationLis
 
         TextView textView = findViewById(R.id.text_view_date);
         Log.i("MainActivity", "Longitude: " + longitude + ", Latitude: " + latitude);
-        textView.setText("Longitude" + longitude + "\n" + "Latitude:" + latitude);
+        textView.setText("Longitude: " + longitude + "\n" + "Latitude: " + latitude);
     }
 
     @Override
